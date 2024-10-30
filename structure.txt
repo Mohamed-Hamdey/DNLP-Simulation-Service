@@ -1,0 +1,19 @@
+deep_nlp_service/
+│
+├── setup.py
+├── README.md
+├── requirements.txt
+│
+├── deep_nlp_service/
+│   ├── __init__.py
+│   ├── config.py
+│   ├── models/
+│   │   ├── __init__.py
+│   │   ├── attention.py
+│   │   ├── bert_model.py
+│   │   └── dataset.py
+│   ├── utils/
+│   │   ├── __init__.py
+│   │   ├── data_processor.py
+│   │   └── logger.py
+│   └── trainer.py

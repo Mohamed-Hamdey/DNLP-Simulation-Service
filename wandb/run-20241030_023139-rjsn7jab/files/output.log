@@ -1,0 +1,34 @@
+C:\Users\PC\venv\Lib\site-packages\huggingface_hub\file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Traceback (most recent call last):
+  File "c:\Users\PC\Desktop\DNLP-Simulation\trained_model.py", line 31, in <module>
+    main()
+  File "c:\Users\PC\Desktop\DNLP-Simulation\trained_model.py", line 20, in main
+    service.train(train_data)
+  File "c:\Users\PC\Desktop\DNLP-Simulation\deep_nlp_service\trainer.py", line 124, in train
+    for batch in train_loader:
+  File "C:\Users\PC\venv\Lib\site-packages\torch\utils\data\dataloader.py", line 631, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\venv\Lib\site-packages\torch\utils\data\dataloader.py", line 675, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\venv\Lib\site-packages\torch\utils\data\_utils\fetch.py", line 54, in fetch
+    return self.collate_fn(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\venv\Lib\site-packages\torch\utils\data\_utils\collate.py", line 316, in default_collate
+    return collate(batch, collate_fn_map=default_collate_fn_map)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\venv\Lib\site-packages\torch\utils\data\_utils\collate.py", line 154, in collate
+    clone.update({key: collate([d[key] for d in batch], collate_fn_map=collate_fn_map) for key in elem})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\venv\Lib\site-packages\torch\utils\data\_utils\collate.py", line 154, in <dictcomp>
+    clone.update({key: collate([d[key] for d in batch], collate_fn_map=collate_fn_map) for key in elem})
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\venv\Lib\site-packages\torch\utils\data\_utils\collate.py", line 141, in collate
+    return collate_fn_map[elem_type](batch, collate_fn_map=collate_fn_map)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\venv\Lib\site-packages\torch\utils\data\_utils\collate.py", line 213, in collate_tensor_fn
+    return torch.stack(batch, 0, out=out)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: stack expects each tensor to be equal size, but got [6] at entry 0 and [9] at entry 1
