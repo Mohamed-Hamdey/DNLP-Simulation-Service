@@ -1,0 +1,16 @@
+README.md
+setup.py
+SimsysDNLP.egg-info/PKG-INFO
+SimsysDNLP.egg-info/SOURCES.txt
+SimsysDNLP.egg-info/dependency_links.txt
+SimsysDNLP.egg-info/requires.txt
+SimsysDNLP.egg-info/top_level.txt
+deep_nlp_service/__init__.py
+deep_nlp_service/config.py
+deep_nlp_service/models/__init__.py
+deep_nlp_service/models/attention.py
+deep_nlp_service/models/bert_model.py
+deep_nlp_service/models/dataset.py
+deep_nlp_service/utils/__init__.py
+deep_nlp_service/utils/data_processor.py
+deep_nlp_service/utils/logger.py
